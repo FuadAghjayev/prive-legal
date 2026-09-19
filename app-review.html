@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>App Review Information — PRIVE</title>
+<style>
+  :root{--bg:#f7f8f7;--card:#fff;--fg:#14201b;--muted:#5c6b64;--brand:#024532;--line:#e2e8e4}
+  @media (prefers-color-scheme:dark){:root{--bg:#0d1512;--card:#141d19;--fg:#e8efeb;--muted:#93a49c;--brand:#4fd1a5;--line:#233029}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 20px 80px}
+  h1{font-size:2rem;margin:0 0 6px;letter-spacing:-.02em}
+  h2{font-size:1.15rem;margin:38px 0 10px;color:var(--brand)}
+  .meta{color:var(--muted);font-size:.9rem;margin:0 0 32px}
+  .back{display:inline-block;margin-bottom:24px;color:var(--brand);text-decoration:none;font-size:.9rem}
+  a{color:var(--brand)}
+  ul{padding-left:22px}
+  li{margin:6px 0}
+  video{width:100%;max-width:360px;display:block;border-radius:18px;border:1px solid var(--line);background:#000;margin:14px 0}
+  .creds{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:14px 0}
+  .creds b{display:inline-block;min-width:70px}
+  code{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:.88em}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">&larr; PRIVE Legal</a>
+  <h1>App Review Information</h1>
+  <p class="meta">PRIVE for iOS &mdash; information for the App Store review team.<br>
+  Last updated: 19 September 2026</p>
+
+  <h2>1. Screen recording</h2>
+  <p>Recorded on a physical iPhone running the latest iOS. It begins with launching the app and shows
+  the typical user flow: phone registration and OTP login, home feed of partner venues, search and
+  filters, venue detail with menu and reviews, table reservation, the membership QR code used in
+  venue, the Reels tab, reporting of user-generated content, and the in-app account deletion flow.
+  This version has no paid content, subscriptions or in-app purchases, so no purchase flow appears.</p>
+  <video controls playsinline preload="metadata" src="prive-demo.mp4"></video>
+  <p>Direct link: <a href="prive-demo.mp4">prive-demo.mp4</a></p>
+
+  <h2>2. Purpose and target audience</h2>
+  <p>PRIVE is a membership-based dining and lifestyle discovery app for Azerbaijan. Members receive a
+  personal QR code that grants a fixed discount at partner restaurants, cafes, hotels, spas and shops.</p>
+  <p><strong>Problem it solves:</strong> discount offers here are scattered across paper cards, social
+  media posts and separate venue programmes, and are hard to find, verify and use; venues have no
+  reliable way to reach guests or measure an offer. PRIVE brings verified partner venues, their current
+  offers and one in-person redemption method into a single app.</p>
+  <p><strong>Audience:</strong> adults living in or visiting Azerbaijan, primarily Baku, who eat out
+  regularly. Not directed at children.</p>
+
+  <h2>3. Setup and access</h2>
+  <p>Sign-in is by phone number with a one-time code. A permanent demo account with a fixed code is
+  configured, so no SMS needs to be received:</p>
+  <div class="creds">
+    <div><b>Phone:</b> <code>+994 XX XXX XX XX</code></div>
+    <div><b>Code:</b> <code>XXXXXX</code></div>
+  </div>
+  <p>There is only one account type and this account has full access. The app is in Azerbaijani
+  (Profil &gt; Dil). No sample files are needed.</p>
+  <ul>
+    <li><strong>Sign in:</strong> &ldquo;Daxil ol&rdquo; &gt; demo number &gt; &ldquo;Kod g&ouml;nd&#601;r&rdquo; &gt; fixed code &gt; &ldquo;Do&#287;rula&rdquo;. New users tap &ldquo;Qeydiyyatdan ke&ccedil;&rdquo;, which uses the same phone and OTP step.</li>
+    <li><strong>Home (&ldquo;&#399;sas&rdquo;):</strong> nearby venues and daily selections. Location is optional; the app works fully if it is denied.</li>
+    <li><strong>Search (&ldquo;Axtar&#305;&#351;&rdquo;):</strong> by venue, cuisine or category, with filters for distance, discount and rating.</li>
+    <li><strong>Venue detail:</strong> About / Reviews / Photos / Menu tabs and &ldquo;Masa rezerv et&rdquo; to reserve a table. Reservations: Profil &gt; Rezervasiyalar&#305;m.</li>
+    <li><strong>Membership QR code:</strong> the centre button in the tab bar; venue staff scan it to apply the discount. History: Profil &gt; Tarix&ccedil;&#601;.</li>
+    <li><strong>Reels:</strong> short venue presentations that can be liked, saved and shared.</li>
+    <li><strong>Assistant (&ldquo;Luna&rdquo;):</strong> answers questions about venues and app features, from the home screen button or Profil &gt; Yard&#305;m v&#601; d&#601;st&#601;k.</li>
+    <li><strong>Reporting:</strong> any review can be reported from the &ldquo;&hellip;&rdquo; menu on the review. Reports are listed under Profil &gt; &#350;ikay&#601;tl&#601;rim and are handled by our moderation team within 24 hours.</li>
+    <li><strong>Account deletion:</strong> Profil &gt; &ldquo;Hesab&#305; sil&rdquo; deletes the account and all associated personal data after a confirmation prompt, in app.</li>
+  </ul>
+
+  <h2>4. External services</h2>
+  <ul>
+    <li><strong>Our own backend service</strong>, operated by us: stores and serves all app content &mdash; accounts, partner venues, offers, reservations, reviews and QR redemptions. It is the only backend the app uses for core functionality.</li>
+    <li><strong>SMS provider</strong>, called only by our backend, solely to deliver the one-time sign-in code.</li>
+    <li><strong>Firebase Cloud Messaging</strong> (Google LLC): push notifications.</li>
+    <li><strong>OpenStreetMap</strong> map tiles: map display and venue locations. No Google Maps services are used.</li>
+    <li><strong>Apple Core Location:</strong> while-in-use only, to sort venues by distance. Optional.</li>
+    <li><strong>Apple Speech framework and system text-to-speech:</strong> on-device voice input and speech output. No third-party AI or LLM provider is used and no voice data is shared.</li>
+    <li><strong>Payment processors:</strong> none. No subscriptions, no in-app purchases and no payment flow; all features are free.</li>
+  </ul>
+
+  <h2>5. Regional differences</h2>
+  <p>The app functions consistently across all regions: no region-locked features, no regional content
+  differences and no regional pricing &mdash; PRIVE is free everywhere. All partner venues are physically
+  located in Azerbaijan (currently Baku), so a user abroad sees the same venues and screens with larger
+  distances. The interface is offered in Azerbaijani in all regions.</p>
+
+  <h2>6. Regulated industry and third-party material</h2>
+  <p>PRIVE does not operate in a highly regulated industry: it is not a financial, medical, gambling or
+  government service, it processes no payments and handles no regulated data. All venue names, logos,
+  photographs, menus and videos belong to our partner venues and are published under signed partnership
+  agreements that authorise PRIVE to display their content and offer the stated discount. No other
+  protected third-party material is included. Copies of the agreements can be provided on request.</p>
+
+  <p>The submitted build has been tested on physical devices running the latest iOS.</p>
+
+  <footer>
+    PRIVE &middot; <a href="mailto:prive.support@gmail.com">prive.support@gmail.com</a> &middot;
+    <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="delete-account.html">Account deletion</a>
+  </footer>
+</div>
+</body>
+</html>
